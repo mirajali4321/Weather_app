@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- section 1  -->
+        <div class="section_1">
+            <nav>
+                <div class="search_title">
+                    <form id="weather_form">
+                        <div class="search_bar">
+                            <input type="text" id="city" placeholder="Search location here" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="title">
+                        <div class="city">
+                            <h1 id="city_name">Lahore</h1><span id="country">PK</span>
+                        </div>
+                        <p id="date">26/04/2023</p>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- show data cards -->
+            <!-- <h1>Today overview</h1> -->
+            <div class="temp_card">
+                <div class="temp_img">
+                    <img src="images/clouds.png " id="weather_icon">
+                </div>
+                <div>
+                    <h1 id="temp">29°C</h1>
+                    <h2>Weather : <span class="temp_date" id="weather">Haze</span></h2>
+                    <h2>Max-Temperature : <span class="temp_date" id="max_temp">29°C</span></h2>
+                    <h2>Min-Temperature : <span class="temp_date" id="min_temp">29°C</span></h2>
+                </div>
+            </div>
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/wind.png">
+                    </div>
+                    <div class="temp">
+                        <span id="wind">6.5 km/h</span>
+                        <h2>Wind Speed </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/humidity.png">
+                    </div>
+                    <div class="temp">
+                        <span id="humidity"> 50 %</span>
+                        <h2>Humidity </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h2>Sun Rise : <span class="temp_date" id="sunrise">05:31:23 UTC</span> </h2>
+                        <h2>Sun Set : <span class="temp_date" id="sunset">18:32:24 UTC</span> </h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="constant.js"></script>
+    <script type="module" src="weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(37, 59, 88, 255);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 90%;
+    /* background-color: rgba(255, 255, 255, 255); */
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+
+
+}
+
+/* section 1  */
+.section_1 {
+    /* border: 1px solid; */
+    width: 100%;
+
+}
+
+.section_1 nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 8rem;
+    
+
+}
+.search_title{
+    width: 100%;
+    display: flex;
+}
+
+.title {
+    width: 30%;
+    
+}
+.city{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+.title p {
+    font-size: 1.8rem;
+}
+
+nav form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search_bar {
+    width: 80%;
+    background-color: rgba(37, 59, 88, 255);
+
+}
+
+.search_bar input[type=text],
+button {
+
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid grey;
+    margin: -2px;
+
+}
+
+form input[type=text] {
+
+
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+
+form button {
+
+    width: 10%;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+form button:hover {
+    background: #ccc;
+}
+/* data  */
+.temp_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+
+}
+.temp_card h1{
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+.temp_card h2{
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+.temp_date{
+    font-size: 1.4rem;
+    color: #c9c7c7;
+}
+.temp_img{
+    width: 20%;
+    margin: 3rem;
+    /* border: 1px solid ; */
+}
+.temp_img img{
+    width: 100%;
+}
+
+
+/* card css  */
+.cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color:#528eb1;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card_img{
+    margin: 1rem;
+    width: 25%;
+}
+.card_img img {
+    width: 100%;
+}
+.card h2 {
+    font-size:1.8rem ;
+    margin-top: 1.8rem;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
